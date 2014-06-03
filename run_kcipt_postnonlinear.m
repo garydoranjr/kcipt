@@ -1,5 +1,6 @@
 function run_kcipt_postnonlinear()
     addpath('gpml-matlab/gpml');
+    addpath('algorithms');
     addpath('kcipt');
     addpath('data');
     addpath('experiments');
