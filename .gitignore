@@ -1,2 +1,5 @@
 *.sw*
 *.DS_Store
+CI_PERM
+algorithms
+gpml-matlab
