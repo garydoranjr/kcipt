@@ -3,7 +3,20 @@ function run_kcit_postnonlinear()
     addpath('algorithms');
     addpath('data');
     addpath('experiments');
+    % Main experiments
     for noise=0:4
+        for trial=0:299
+            for independent=0:1
+                for N=[200 400]
+                    kcit_postnonlinear(independent, noise, trial, N, 'results/kcit_postnonlinear.csv');
+                end
+            end
+        end
+    end
+
+    % For high-dimensional experiments
+    N = 400
+    for noise=[9 19 49]
         for trial=0:299
             for independent=0:1
                 for N=[200 400]
