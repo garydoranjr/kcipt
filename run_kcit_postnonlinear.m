@@ -15,7 +15,7 @@ function run_kcit_postnonlinear()
     end
 
     % For high-dimensional experiments
-    N = 400
+    N = 400;
     for noise=[9 19 49]
         for trial=0:299
             for independent=0:1
