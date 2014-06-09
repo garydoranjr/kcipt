@@ -8,7 +8,7 @@ function run_kcipt_chaotic()
         for trial=0:299
             for independent=0:1
                 for N=[200 400]
-                    kcipt_chaotic('rkhs', 'bootstrap', 10, 1000, independent, gamma, trial, N, 'results/kcipt_chaotic.csv');
+                    kcipt_chaotic('rkhs', 'bootstrap', 25, 10000, independent, gamma, trial, N, 'results/kcipt_chaotic.csv');
                 end
             end
         end
