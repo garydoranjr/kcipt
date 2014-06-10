@@ -19,9 +19,7 @@ function run_kcit_postnonlinear()
     for noise=[9 19 49]
         for trial=0:299
             for independent=0:1
-                for N=[200 400]
-                    kcit_postnonlinear(independent, noise, trial, N, 'results/kcit_postnonlinear.csv');
-                end
+                kcit_postnonlinear(independent, noise, trial, N, 'results/kcit_postnonlinear.csv');
             end
         end
     end
